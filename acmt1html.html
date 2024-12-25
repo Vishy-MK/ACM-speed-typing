@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="acmt1css.css">
+    <title>Check your speed!</title>
+</head>
+<body>
+    <div class="test-container">
+        <div class="main-title">
+            <h1 class="ks">Typing Speed Test</h1>
+        </div>
+        <div class="text ks" id="main-text">
+            <p class="main-text">Waiting for you to start!</p>
+        </div>
+        <div class="words" id="words">
+            <input type="text" class="input-box" id="input-box" placeholder="Click on Start" disabled>
+        </div>
+        <div class="speed ks" id="speed"></div>
+        <div class="restart">
+            <button id="res-but" onclick="startTestActual()">Start</button>
+        </div>
+        <div class="caution ks">if the test doesn't work after clicking Start please reload!</div>
+    </div>
+    <script src="acmt1js.js"></script>
+</body>
+</html>

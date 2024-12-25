@@ -1,0 +1,98 @@
+h1{
+    font-size: 50px;
+    
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+body{
+    background-color: #121212;
+    animation: fadeIn 1s ease-in-out;
+}
+.caution{
+    padding-top: 2%;
+    font-size: smaller;
+    color:#d4d4d8
+}
+.speed{
+    color: #d4d4d8;
+    font-size: larger;
+}
+.main-title{
+    color: #0dcaf0;
+}
+.correct{
+    color: #00ff7f;
+}
+.accuracy, .speed,.restart {
+    padding-top: 1%;
+}
+.accuracy{
+    padding-top: 2%;
+}
+.main-text{
+    padding-top: 2%;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+.text{
+    height: 10%;
+    width: 80%;
+    padding: 1%;
+    color: #d4d4d8;
+    text-align: center;
+    font-size: x-large;
+
+}
+.words{
+    padding-top: 3%;
+}
+.test-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+.input-box{
+    height: 20px;
+    width: auto;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding:3%;
+    color: #d4d4d8;
+}
+.ks {
+  font-family: "Kumbh Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "YOPQ" 300;
+}
+#res-but{
+    width: 6rem;
+    height: 3rem;
+    background-color: #014f43;
+    border: 6px rgb(148, 243, 235);
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: aliceblue;
+}
+#res-but:hover{
+    cursor: pointer;
+    background-color: #20c997;
+}

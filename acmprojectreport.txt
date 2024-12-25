@@ -1,0 +1,52 @@
+--------------------------------Report-----------------------------------------------------
+
+So what I have done is, for the text needed to type in this project, I have gotten that from google books API. So the text is random and different each time. 
+
+---> Problems Faced and How I Solved Them:
+
+The significant challenge I faced while developing the website was ensuring that the code only executed after the API successfully fetched the random text from the server. Initially, the code ran before the API could complete its request, which led to issues like empty or incomplete text being displayed for the user to type.
+Solution : I included the main code inside the fetch, so that the code is ran only after the text is retrieved from the API. I avoided using async functions by doing this.
+
+Another issue involved checking if a word had been typed correctly in the input field. I implemented a function that compared the typed word with the corresponding word from the random text. 
+I have used event Lisenters so that whenever spacebar is typed (" ") it is removed from input box
+
+A minor issue I faced was changing the function of buttons, which I solved using removeEventListener & addEventListener 
+
+Another issue was measuring the time taken by the user to complete the typing test. To tackle this, I used the `Date()` function in JavaScript to measure the time difference between when the test starts and when the user finishes typing.
+
+Another thing, to calculate the speed, I used the formula given by https://www.speedtypingonline.com (characters/(5*time))
+which is in contrast to the normal formula we would assume (words/time)
+
+Lastly, generating random values to retrieve random text from the API was another challenge. I used a method to generate random numbers that would correspond to the random `desc` ID from the API, allowing me to fetch different text for each test.
+
+
+
+---> The General Flow and Structure of the App
+
+The app's main flow starts by fetching random text from the Google Books API using a search query. This text is then displayed on the screen for the user to type. The user types the text into an input field, and the app checks if the typed words match the corresponding words from the fetched text. The app measures the time taken by the user to type the text, and the result is displayed once the typing is completed.
+There is a reset button present through which the user can retry this test.
+
+
+---> Concepts of JS Applied
+
+The `Date()` function was crucial for measuring the time it took for the user to type the given text. 
+
+Functions were used to modularize the code, such as fetching data, checking user input, and handling the timer.
+ 
+The `fetch()` function allowed me to retrieve random text from the Google Books API, and random numbers were used to get random descriptions from the API for each test.
+ 
+Event listeners helped detect when the user interacted with the input field or button, making the app interactive.
+ 
+String manipulation methods like `slice()` and `replace()`.
+
+Expression `/\s+/` to handle multiple spaces efficiently.
+
+----> Learning Experience
+
+This project provided valuable learning experiences, especially in interacting with external APIs using `fetch()` and handling asynchronous code with `async`/`await`. I also gained a deeper understanding of event handling and how event listeners work to capture user input and actions, also learnt more about strig manipulation techniques like `slice()` and `replace()`. 
+Learnt a new way to check the presence of " " in a string by using /\s+/ instead of " ".
+
+Also learnt about keyframes, and added a bit of animation on the website. 
+
+I really enjoyed and learnt a lot of new things while doing this project. I have given my best in terms of designing the UI as well as the backend. I look forward to work on other projects as well in this club and continue to learn.
+
